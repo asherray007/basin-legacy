@@ -1,135 +1,100 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-neutral-950 text-white">
+    <main className="bg-[#0f0f0f] text-white">
 
-      {/* Hero Section */}
-      <section
-        className="relative h-[90vh] flex items-center justify-center text-center bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c')",
-        }}
-      >
-        <div className="absolute inset-0 bg-black/70" />
-        <div className="relative z-10 px-6">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+      {/* HERO SECTION */}
+      <section className="relative h-screen flex items-center justify-center text-center px-6">
+        <div className="absolute inset-0">
+          <img
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+            alt="Luxury Home Construction"
+            className="w-full h-full object-cover opacity-40"
+          />
+        </div>
+        <div className="relative z-10 max-w-4xl">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6">
             Basin Legacy
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-neutral-300">
-            Crafting Timeless Homes. Building Your Legacy.
+          <p className="text-xl md:text-2xl mb-6 text-gray-200">
+            Luxury Custom Home Building & Development in Odessa, Texas
           </p>
           <a
-            href="tel:4325305153"
-            className="bg-white text-black px-8 py-4 rounded-xl text-lg font-semibold hover:bg-neutral-200 transition"
+            href="#contact"
+            className="bg-[#6b0f1a] hover:bg-[#8a1c2c] transition px-8 py-4 text-lg font-semibold rounded"
           >
-            Call Now
+            Request a Consultation
           </a>
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-20 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h2 className="text-3xl font-semibold mb-6">About Basin Legacy</h2>
-          <p className="text-neutral-400 mb-4 leading-relaxed">
-            Founded and led by <strong>Mr. C</strong>, Basin Legacy specializes
-            in luxury home building and residential development. We are
-            committed to precision craftsmanship, premium materials, and
-            timeless architectural design.
-          </p>
-          <p className="text-neutral-400 leading-relaxed">
-            Our mission is simple: build homes that stand the test of time and
-            reflect the legacy of the families who live in them.
-          </p>
-        </div>
-        <img
-          src="https://images.unsplash.com/photo-1503387762-592deb58ef4e"
-          alt="Construction Site"
-          className="rounded-2xl shadow-xl h-80 w-full object-cover"
-        />
-      </section>
-
-      {/* Services Section */}
-      <section className="bg-neutral-900 py-20 px-6">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-semibold mb-12">Our Services</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-neutral-950 p-8 rounded-2xl shadow-lg">
-              <h3 className="text-xl font-semibold mb-3">
-                Custom Home Building
-              </h3>
-              <p className="text-neutral-400">
-                Luxury homes designed and built with precision and premium
-                materials.
-              </p>
-            </div>
-
-            <div className="bg-neutral-950 p-8 rounded-2xl shadow-lg">
-              <h3 className="text-xl font-semibold mb-3">
-                Residential Development
-              </h3>
-              <p className="text-neutral-400">
-                Full-scale property development focused on quality and long-term
-                value.
-              </p>
-            </div>
-
-            <div className="bg-neutral-950 p-8 rounded-2xl shadow-lg">
-              <h3 className="text-xl font-semibold mb-3">
-                Project Management
-              </h3>
-              <p className="text-neutral-400">
-                Professional oversight ensuring timelines, budgets, and
-                excellence are maintained.
-              </p>
-            </div>
+      {/* SERVICES */}
+      <section className="py-20 px-6 text-center">
+        <h2 className="text-4xl font-bold mb-12 text-[#8a1c2c]">
+          Our Services
+        </h2>
+        <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+          <div>
+            <h3 className="text-2xl font-semibold mb-4">Custom Home Building</h3>
+            <p className="text-gray-400">
+              We design and construct high-quality custom homes tailored to your lifestyle and vision.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-2xl font-semibold mb-4">Residential Development</h3>
+            <p className="text-gray-400">
+              Full-scale residential development projects built with precision, integrity, and craftsmanship.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-2xl font-semibold mb-4">Project Management</h3>
+            <p className="text-gray-400">
+              From concept to completion, we oversee every detail to ensure excellence at every stage.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section className="py-20 px-6 max-w-6xl mx-auto">
-        <h2 className="text-3xl font-semibold text-center mb-12">
+      {/* GALLERY */}
+      <section className="py-20 bg-[#1a1a1a] px-6">
+        <h2 className="text-4xl font-bold text-center mb-12 text-[#8a1c2c]">
           Featured Projects
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          <img
-            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c"
-            alt="Luxury Home"
-            className="rounded-2xl shadow-xl h-64 w-full object-cover"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1588854337118-7b1e9b2e4a09"
-            alt="Modern House"
-            className="rounded-2xl shadow-xl h-64 w-full object-cover"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1599423300746-b62533397364"
-            alt="Construction Project"
-            className="rounded-2xl shadow-xl h-64 w-full object-cover"
-          />
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6" className="rounded-lg" />
+          <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde" className="rounded-lg" />
+          <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c" className="rounded-lg" />
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="bg-neutral-900 py-20 px-6 text-center">
-        <h2 className="text-3xl font-semibold mb-6">Start Your Project</h2>
-        <p className="text-neutral-300 mb-4">
-          Contact Mr. C and the Basin Legacy team today.
+      {/* ABOUT */}
+      <section className="py-20 px-6 max-w-4xl mx-auto text-center">
+        <h2 className="text-4xl font-bold mb-8 text-[#8a1c2c]">
+          About Basin Legacy
+        </h2>
+        <p className="text-gray-300 text-lg leading-relaxed">
+          Basin Legacy is a premier custom home builder serving Odessa, Texas and surrounding areas.
+          We are committed to superior craftsmanship, timeless design, and uncompromising quality.
+          Our mission is to create homes that stand as lasting legacies for generations to come.
         </p>
-        <p className="text-xl font-semibold mb-6">(432) 530-5153</p>
-        <a
-          href="tel:4325305153"
-          className="bg-white text-black px-8 py-4 rounded-xl text-lg font-semibold hover:bg-neutral-200 transition"
-        >
-          Call Now
-        </a>
       </section>
 
-      {/* Footer */}
-      <footer className="text-center py-6 border-t border-neutral-800 text-neutral-500 text-sm">
+      {/* CONTACT */}
+      <section id="contact" className="py-20 bg-[#1a1a1a] px-6 text-center">
+        <h2 className="text-4xl font-bold mb-8 text-[#8a1c2c]">
+          Start Your Project
+        </h2>
+        <p className="text-lg mb-4 text-gray-300">
+          Call us directly to begin your consultation.
+        </p>
+        <p className="text-2xl font-semibold text-white">
+          432-530-5153
+        </p>
+      </section>
+
+      <footer className="py-6 text-center text-gray-500 text-sm">
         © {new Date().getFullYear()} Basin Legacy. All rights reserved.
       </footer>
+
     </main>
   );
 }
